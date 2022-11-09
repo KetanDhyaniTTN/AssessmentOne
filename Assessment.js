@@ -3,145 +3,151 @@ import { View, Text, SafeAreaView, StyleSheet, ScrollView, Image, TouchableOpaci
 class Assessment extends Component {
     render() {
         return (
-            <ScrollView>
-                <View style={styles.contHead}>
-                    <SafeAreaView style={styles.safeHead}>
-                        <Image
-                            style={styles.headimage}
-                            source={{ uri: 'https://image.pngaaa.com/432/263432-middle.png' }}
-                        />
-                        
-                        <Text style={styles.headerText}>manage</Text>
-                        
-                       
-                        
-                        <Image
-                            style={styles.headimage}
-                            source={{ uri: 'https://static.vecteezy.com/system/resources/previews/007/037/880/non_2x/bell-the-black-color-icon-in-circle-or-round-vector.jpg' }}
-                        />
-                    </SafeAreaView>
-                </View>
-                <View style={styles.adMid}>
-                    <View style={styles.adServices}>
-
-                        <View style={styles.arrowtext}>
-                            <Text style={styles.adtext}>Services</Text>
+            <SafeAreaView>
+                <ScrollView>
+                    <View style={styles.contHead}>
+                        <SafeAreaView style={styles.safeHead}>
                             <Image
-                                style={styles.imageArrow}
-                                source={{ uri: 'https://www.clipartmax.com/png/middle/329-3299930_greater-than-number-right-arrow-icon.png' }} />
+                                style={styles.headimage}
+                                source={{ uri: 'https://image.pngaaa.com/432/263432-middle.png' }}
+                            />
+
+                            <Text style={styles.headerText}>manage</Text>
+
+
+
+                            <Image
+                                style={styles.headimage}
+                                source={{ uri: 'https://static.vecteezy.com/system/resources/previews/007/037/880/non_2x/bell-the-black-color-icon-in-circle-or-round-vector.jpg' }}
+                            />
+                        </SafeAreaView>
+                    </View>
+                    <View>
+                    <View style={styles.adMid}>
+                        <View style={styles.adServices}>
+
+                            <View style={styles.arrowtext}>
+                                <Text style={styles.adtext}>Services</Text>
+                                <Image
+                                    style={styles.imageArrow}
+                                    source={{ uri: 'https://www.clipartmax.com/png/middle/329-3299930_greater-than-number-right-arrow-icon.png' }} />
+                            </View>
+
+                            <View style={styles.boldText}>
+                                <Text style={styles.adBold}>5 Services</Text>
+                            </View>
+
+
+
+                            <TouchableOpacity style={styles.buttonDetail}>
+                                <Text style={styles.buttonText}>View Details</Text>
+
+
+                            </TouchableOpacity>
+
+
+
+
+
+
                         </View>
 
-                        <View style={styles.boldText}>
-                            <Text style={styles.adBold}>5 Services</Text>
+                        <View style={styles.adServices}>
+
+                            <View style={styles.viewLock}>
+                                <Text style={styles.adtextTwo}>Money</Text>
+                                <Image
+                                    style={styles.imageLock}
+                                    source={{ uri: 'https://img.favpng.com/11/3/17/computer-icons-lock-password-vector-graphics-email-png-favpng-cRjNJUWuWqpkjLqAHVVYwwbW3_t.jpg' }} />
+                            </View>
+
+                            <View style={styles.boldLock}>
+                                <Text style={styles.adBoldTwo}>....</Text>
+                                <Text style={styles.adsecond}>in your wallet</Text>
+                            </View>
+
+                            <TouchableOpacity style={styles.buttonDetailTwo}>
+                                <Text style={styles.buttonTextTwo}>Show Balance</Text>
+
+
+                            </TouchableOpacity>
+
+
+
+
                         </View>
-
-
-
-                        <TouchableOpacity style={styles.buttonDetail}>
-                            <Text style={styles.buttonText}>View Details</Text>
-
-
-                        </TouchableOpacity>
-
-
-
 
 
 
                     </View>
 
-                    <View style={styles.adServices}>
-
-                        <View style={styles.viewLock}>
-                            <Text style={styles.adtextTwo}>Money</Text>
+                    <View style={styles.viewPlus}>
+                        <TouchableOpacity style={styles.buttonPlus}>
                             <Image
-                                style={styles.imageLock}
-                                source={{ uri: 'https://img.favpng.com/11/3/17/computer-icons-lock-password-vector-graphics-email-png-favpng-cRjNJUWuWqpkjLqAHVVYwwbW3_t.jpg' }} />
-                        </View>
-
-                        <View style={styles.boldLock}>
-                            <Text style={styles.adBoldTwo}>....</Text>
-                            <Text style={styles.adsecond}>in your wallet</Text>
-                        </View>
-
-                        <TouchableOpacity style={styles.buttonDetailTwo}>
-                            <Text style={styles.buttonTextTwo}>Show Balance</Text>
-
+                                style={styles.imageAirtel}
+                                source={{ uri: 'https://menglish.sakshi.com/sites/default/files/styles/cinema_main/public/article_images/2022/10/6/Airtel-5G-Plus-1665051422.jpg?itok=a10RPMS6' }}
+                            />
+                            <Text style={styles.buttonTextplus}>Check if your phone is 5G enabled</Text>
+                            <Image
+                                style={styles.imageRedArrow}
+                                source={{ uri: 'https://t4.ftcdn.net/jpg/05/29/79/13/360_F_529791353_Ip9hk3tZPgOhdt3gVnpLk0mDsoe6Zmrm.jpg' }}
+                            />
 
                         </TouchableOpacity>
 
+                    </View>
+
+                    <View>
+                        <ScrollView horizontal={true}>
+                            <View style={styles.scrollAd}>
+                                <Image
+                                    style={styles.imageScroll}
+
+                                    source={{ uri: 'https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/10/07/1099601-airtel-5g.jpg' }} />
+
+                                <Image
+                                    style={styles.imageScroll}
+
+                                    source={{ uri: 'https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/10/07/1099601-airtel-5g.jpg' }} />
+
+                                <Image
+                                    style={styles.imageScroll}
+
+                                    source={{ uri: 'https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/10/07/1099601-airtel-5g.jpg' }} />
+
+
+                            </View>
 
 
 
+                        </ScrollView>
+                    </View>
+                    <View style={styles.infoView}>
+                        <TouchableOpacity style={styles.buttonMis} >
+                            <Image
+                                style={styles.imageMis}
+                                source={{ uri: 'https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/phone-circle-green-512.png' }} />
+                            <Text style={styles.textMis}>missed calls</Text >
+                        </TouchableOpacity>
+
+                        <TouchableOpacity style={styles.buttonReward}>
+                            <Image
+                                style={styles.imageReward}
+                                source={{ uri: 'https://www.iconbunny.com/icons/media/catalog/product/cache/2/thumbnail/600x/1b89f2fc96fc819c2a7e15c7e545e8a9/8/7/870.7-gift-box-icon-iconbunny.jpg' }} />
+                            <Text style={styles.textReward}>rewards &</Text>
+                            <Text style={styles.textCoupin}>coupin</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.buttonPrepaid}>
+                            <Image style={styles.imageprepaid}
+                                source={require('./images/icons8-prepaid-recharge-24.png')} />
+                            <Text style={styles.textPrepaid}>refer </Text>
+                            <Text style={styles.textPrepaid}>Prepaid</Text>
+                        </TouchableOpacity>
+                    </View>
                     </View>
 
 
 
-                </View>
-
-                <View style={styles.viewPlus}>
-                    <TouchableOpacity style={styles.buttonPlus}>
-                        <Image
-                            style={styles.imageAirtel}
-                            source={{ uri: 'https://menglish.sakshi.com/sites/default/files/styles/cinema_main/public/article_images/2022/10/6/Airtel-5G-Plus-1665051422.jpg?itok=a10RPMS6' }}
-                        />
-                        <Text style={styles.buttonTextplus}>Check if your phone is 5G enabled</Text>
-                        <Image
-                            style={styles.imageRedArrow}
-                            source={{ uri: 'https://t4.ftcdn.net/jpg/05/29/79/13/360_F_529791353_Ip9hk3tZPgOhdt3gVnpLk0mDsoe6Zmrm.jpg' }}
-                        />
-
-                    </TouchableOpacity>
-
-                </View>
-
-                <View>
-                    <ScrollView horizontal={true}>
-                        <View style={styles.scrollAd}>
-                            <Image
-                                style={styles.imageScroll}
-
-                                source={{ uri: 'https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/10/07/1099601-airtel-5g.jpg' }} />
-
-                            <Image
-                                style={styles.imageScroll}
-
-                                source={{ uri: 'https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/10/07/1099601-airtel-5g.jpg' }} />
-
-                            <Image
-                                style={styles.imageScroll}
-
-                                source={{ uri: 'https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2022/10/07/1099601-airtel-5g.jpg' }} />
-
-
-                        </View>
-
-
-
-                    </ScrollView>
-                </View>
-                <View style={styles.infoView}>
-                    <TouchableOpacity style={styles.buttonMis} >
-                        <Image
-                            style={styles.imageMis}
-                            source={{ uri: 'https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/phone-circle-green-512.png' }} />
-                        <Text style={styles.textMis}>missed calls</Text >
-                    </TouchableOpacity>
-
-                    <TouchableOpacity style={styles.buttonReward}>
-                        <Image
-                            style={styles.imageReward}
-                            source={{ uri:'https://www.iconbunny.com/icons/media/catalog/product/cache/2/thumbnail/600x/1b89f2fc96fc819c2a7e15c7e545e8a9/8/7/870.7-gift-box-icon-iconbunny.jpg'}} />
-                        <Text style={styles.textReward}>rewards &</Text>
-                        <Text style={styles.textCoupin}>coupin</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.buttonPrepaid}>
-                        <Image style={styles.imageprepaid}
-                            source={require('./images/icons8-prepaid-recharge-24.png')} />
-                        <Text style={styles.textPrepaid}>refer </Text>
-                        <Text style={styles.textPrepaid}>Prepaid</Text>
-                    </TouchableOpacity>
-                </View>
 
 
 
@@ -163,21 +169,8 @@ class Assessment extends Component {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-               
-
-            </ScrollView>
+                </ScrollView>
+            </SafeAreaView>
         )
     }
 }
@@ -200,12 +193,12 @@ const styles = StyleSheet.create({
 
 
     },
-    
-    
+
+
     headerText: {
         color: 'black',
         fontSize: 23,
-        fontWeight:'500'
+        fontWeight: '500'
 
     },
     headimage: {
@@ -233,7 +226,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         borderRadius: 10,
         borderColor: 'black',
-       
+
 
 
 
@@ -253,12 +246,15 @@ const styles = StyleSheet.create({
     adtext: {
         fontSize: 15,
         fontWeight: '200',
+        marginTop: 5,
     },
 
     imageArrow: {
         height: 18,
         width: 18,
         borderRadius: 10,
+        marginTop: 5,
+
     },
 
 
@@ -399,7 +395,7 @@ const styles = StyleSheet.create({
 
     },
     buttonMis: {
-       // marginLeft: 30,
+        // marginLeft: 30,
         padding: 10,
         backgroundColor: '#f8f8ff',
         borderRadius: 10,
@@ -413,9 +409,9 @@ const styles = StyleSheet.create({
         fontWeight: '200',
     },
     buttonReward: {
-       // marginLeft: 30,
-       flexDirection:'column',
-       justifyContent:'center',
+        // marginLeft: 30,
+        flexDirection: 'column',
+        justifyContent: 'center',
         padding: 10,
         backgroundColor: '#f8f8ff',
         borderRadius: 10,
@@ -423,7 +419,7 @@ const styles = StyleSheet.create({
     textReward: {
         fontSize: 15,
         fontWeight: '200',
-        
+
     },
     textCoupin: {
         fontSize: 15,
@@ -435,8 +431,8 @@ const styles = StyleSheet.create({
         width: 50,
     },
     buttonPrepaid: {
-        flexDirection:'column',
-        justifyContent:'center',
+        flexDirection: 'column',
+        justifyContent: 'center',
         padding: 10,
         backgroundColor: '#f8f8ff',
         borderRadius: 10,
