@@ -18,7 +18,7 @@ export default function InputScreen({route}) {
               return {
                   ...curr,
                   title: title,
-                  subTitle: subtitle
+                  subtitle: subtitle
               }
           }
           else {

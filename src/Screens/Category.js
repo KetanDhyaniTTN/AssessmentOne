@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native'
+import { View, Text, TouchableOpacity, StyleSheet,Image } from 'react-native'
 import React from 'react';
 //import style from './ParticularCatStyle';
 import { useDispatch, useSelector } from 'react-redux';
@@ -16,7 +16,7 @@ const Category = ({ route, navigation }) => {
   }
   const handDeleteButton=(id)=>{
     const prevInfo=info[nav];
-    const newInfo=prevInfo.filter(curr=>curr.id!==id);
+    const newInfo=prevInfo.filter(item=>item.id!==id);
     dispatch(deleteData(newInfo,nav));
 }
 
@@ -37,7 +37,7 @@ const handleEditButton=(item)=>{
 
             <View style={styles.buttonFunc}>
             <TouchableOpacity style={styles.deleteButton}
-            onPress={handDeleteButton}>
+            onPress={() => handDeleteButton(item.id)}>
           <Text style={styles.addText}>DELETE</Text>
         </TouchableOpacity>
 
@@ -54,7 +54,9 @@ const handleEditButton=(item)=>{
       <View style={styles.buttonAdd}>
          <TouchableOpacity style={styles.addButton}
           onPress={handleAddButton}>
-            <Text style={styles.addText}>ADD DATA</Text>
+            {/* <Text style={styles.addText}>ADD DATA</Text> */}
+            <Image source={require('../Images/icons8-add-48.png')}
+            style={styles.addImage}/>
         </TouchableOpacity>
 
       </View>
@@ -87,19 +89,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'black'
 
   },
-  addButton: {
-    padding: 10,
-    width: 150,
-    backgroundColor: 'red',
-    borderRadius: 20,
-    marginHorizontal: 10,
+  addImage: {
+    height:70,
+    width:70
 
   },
   buttonAdd: {
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-
+    flexDirection:'row',
+    justifyContent:'center',
+    marginTop:20,
   },
   deleteButton: {
     backgroundColor: 'red',
