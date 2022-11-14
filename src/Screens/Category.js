@@ -1,6 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet,Image } from 'react-native'
 import React from 'react';
-//import style from './ParticularCatStyle';
+
 import { useDispatch, useSelector } from 'react-redux';
 import { deleteData } from '../Actions/Actions';
 import { editData } from '../Actions/Actions';
@@ -9,7 +9,7 @@ import { toggledata } from '../Actions/Actions';
 const Category = (props) => {
   const {route} = props;
   const { info } = useSelector((state) => state)
-   //const params = {nav: '', navigation: ''}
+   
    
   const { nav } = route.params
   
