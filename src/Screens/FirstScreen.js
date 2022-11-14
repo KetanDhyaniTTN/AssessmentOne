@@ -5,7 +5,7 @@ const FirstScreen = (props) => {
     let a = 100
     const handleButtonClick = (nav) => {
         const { navigation } = props
-        navigation.navigate('Display', { nav, navigation })
+        navigation.navigate('Category', { nav, navigation })
     }
     return (
         <SafeAreaView style={styles.safeView}>

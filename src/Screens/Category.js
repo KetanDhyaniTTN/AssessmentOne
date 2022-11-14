@@ -9,14 +9,14 @@ import { toggledata } from '../Actions/Actions';
 const Category = (props) => {
   const {route} = props;
   const { info } = useSelector((state) => state)
-  // const params = {nav: '', navigation: ''}
-  // route.params.nav
+   //const params = {nav: '', navigation: ''}
+   
   const { nav } = route.params
   
   const dispatch=useDispatch();
 
   const handleAddButton = () => {
-    navigation.navigate('InputScreen', { nav })
+    props.navigation.navigate('InputScreen', { nav })
   }
   const handDeleteButton=(id)=>{
     const prevInfo=info[nav];
@@ -24,18 +24,7 @@ const Category = (props) => {
     dispatch(deleteData(newInfo,nav));
 }
 
-//  [
-//   {
-//     id:100,
-//     title:'Add Name',
-//     subtitle:'Add Subtitle'
-//   },
-//   {
-//     id:102,
-//     title:'Add Name',
-//     subtitle:'Add Subtitle'
-//   },
-// ],
+
 const handleEditButton=(item)=>{
   dispatch(toggledata());
   const newInfo=info[nav];
