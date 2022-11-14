@@ -6,9 +6,13 @@ import { deleteData } from '../Actions/Actions';
 import { editData } from '../Actions/Actions';
 import { toggledata } from '../Actions/Actions';
 
-const Category = ({ route, navigation }) => {
+const Category = (props) => {
+  const {route} = props;
   const { info } = useSelector((state) => state)
+  // const params = {nav: '', navigation: ''}
+  // route.params.nav
   const { nav } = route.params
+  
   const dispatch=useDispatch();
 
   const handleAddButton = () => {
@@ -20,6 +24,18 @@ const Category = ({ route, navigation }) => {
     dispatch(deleteData(newInfo,nav));
 }
 
+//  [
+//   {
+//     id:100,
+//     title:'Add Name',
+//     subtitle:'Add Subtitle'
+//   },
+//   {
+//     id:102,
+//     title:'Add Name',
+//     subtitle:'Add Subtitle'
+//   },
+// ],
 const handleEditButton=(item)=>{
   dispatch(toggledata());
   const newInfo=info[nav];

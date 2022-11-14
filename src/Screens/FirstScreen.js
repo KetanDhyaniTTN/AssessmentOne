@@ -2,9 +2,10 @@ import React from "react";
 import { SafeAreaView, View, Text, TouchableOpacity, StyleSheet, Image } from "react-native";
 
 const FirstScreen = (props) => {
+    let a = 100
     const handleButtonClick = (nav) => {
         const { navigation } = props
-        navigation.navigate('Category', { nav, navigation })
+        navigation.navigate('Display', { nav, navigation })
     }
     return (
         <SafeAreaView style={styles.safeView}>

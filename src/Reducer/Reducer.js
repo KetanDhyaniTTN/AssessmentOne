@@ -8,9 +8,19 @@ const INITIAL_STATE={
             id:100,
             title:'Add Name',
             subtitle:'Add Subtitle'
-          }
+          },
+          {
+            id:100,
+            title:'Add Name',
+            subtitle:'Add Subtitle'
+          },
         ],
      SCHOOL: [
+          {
+            id:101,
+            title:'Add Address',
+            subtitle:'Add Address',
+          },
           {
             id:101,
             title:'Add Address',
